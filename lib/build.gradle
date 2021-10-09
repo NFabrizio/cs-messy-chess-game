@@ -9,6 +9,7 @@
 plugins {
     // Apply the java-library plugin for API and implementation separation.
     id 'java-library'
+    id 'info.solidsoft.pitest' version '1.7.0'
 }
 
 repositories {
@@ -25,4 +26,13 @@ dependencies {
 
     // This dependency is used internally, and not exposed to consumers on their own compile classpath.
     implementation 'com.google.guava:guava:29.0-jre'
+}
+
+pitest {
+    targetClasses = ['a1.*']  //by default "${project.group}.*"
+    targetTests = ['a1.*Test*']
+    pitestVersion = '1.7.0' //not needed when a default PIT version should be used
+    threads = 4
+    outputFormats = ['XML', 'HTML']
+    timestampedReports = false
 }
