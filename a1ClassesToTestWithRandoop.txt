@@ -1,0 +1,9 @@
+a1.Bishop
+a1.ChessBoard
+a1.ChessPiece
+a1.IllegalMoveException
+a1.IllegalPositionException
+a1.King
+a1.Knight
+a1.Pawn
+a1.Rook

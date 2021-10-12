@@ -11,6 +11,11 @@ plugins {
     id 'java-library'
 }
 
+apply plugin: 'java'
+apply plugin: 'eclipse'
+sourceCompatibility = 11
+targetCompatibility = 11
+
 repositories {
     // Use JCenter for resolving dependencies.
     jcenter()

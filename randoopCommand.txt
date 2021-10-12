@@ -1,0 +1,1 @@
+java -classpath /Users/ufabrni/eclipse-workspace/cs514.a01.mess/lib/build/classes/java/main:/Users/ufabrni/eclipse-workspace/randoop-4.2.6/randoop-all-4.2.6.jar randoop.main.Main gentests --classlist=a1ClassesToTestWithRandoop.txt --junit-output-dir=/Users/ufabrni/eclipse-workspace/cs514.a01.mess/randoop-tests
